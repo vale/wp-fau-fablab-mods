@@ -8,7 +8,7 @@ defined('ABSPATH') or die("[!] This script must be executed by a wordpress insta
  */
 function faufablab_custom_contact_methods( $fields ) {
 	$fields['mobile'] = __( 'Mobile' );
-	$fields['fau_id'] = __( 'FAU ID' );
+	$fields['fau_id'] = __( 'FAU ID von Rückseite FAUcard' );
 	return $fields;
 }
 add_filter( 'user_contactmethods', 'faufablab_custom_contact_methods' );
