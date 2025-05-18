@@ -4,11 +4,11 @@
 defined('ABSPATH') or die("[!] This script must be executed by a wordpress instance!\r\n");
 
 /**
- * Add Mobile number and FAU Card ID Field to contact methods
+ * Add Mobile number and FAU ID Field to contact methods
  */
 function faufablab_custom_contact_methods( $fields ) {
 	$fields['mobile'] = __( 'Mobile' );
-	$fields['fau_id'] = __( 'FAU Card ID' );
+	$fields['fau_id'] = __( 'FAU ID' );
 	return $fields;
 }
 add_filter( 'user_contactmethods', 'faufablab_custom_contact_methods' );
